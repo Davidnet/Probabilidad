@@ -1,0 +1,88 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\newtheorem*{rs}{Respuesta}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\y}{\text{ y }}
+\newcommand{\tq}{\text{ tal que }}
+\newcommand{\tqs}{\text{ tales que }}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+ \pagestyle{fancy}
+ \lhead{Diego A. Robayo Bargans\\
+ 	Tarea }
+ \newcommand{\abs}[1]{\left| #1 \right| }
+ 
+ 
+ \begin{document}
+ 	 \lhead{Segundo Taller, Probabilidad}
+ 	\begin{enumerate}
+ 		\item[\textbf{Ejercicio 1.}]$\;$\\
+ 		\begin{itemize}
+ 			\item \begin{enumerate}
+ 				\item Sea $\mu_1$ una distribución en $\R$. Calcule el parámetro $c \in \R$ que falta.
+ 				$$\mu_1(dx)= c \frac{1}{x}\mathbb{I}\{x>2 \}dx.$$
+ 					\item Sea $\mu_2$ una distribución en $\R$. Calcule el parámetro $c \in \R$ que falta.
+ 					$$\mu_2(dx)=5 \frac{1}{x^c}\mathbb{I}\{x>1 \}dx.$$
+ 						\item Sea $\mu_3$ una distribución en $\R$. Calcule el parámetro $c \in \R$ que falta.
+ 						$$\mu_3(dx)=5\frac{\log(x)}{x^c}\mathbb{I}\{x>1 \}dx.$$
+ 				
+ 			\end{enumerate}
+ 			\item Considere una familia independiente de variables aleatorias $(X_i)_{i\in \N}$, con $X_i\sim\mathcal{U}_{[0,1]}$.
+ 			\begin{enumerate}
+ 				\item Calcule y dibuje la densidad de $X_1+X_2.$
+ 				\item Calcule y dibuje la densidad de $X_1+X_2+X_3.$
+ 				\item Calcule y dibuje la densidad de $X_1+X_2+X_2+X_4.$
+ 				\item ¿Qué se puede decir de $\sum_{i=1}^{n}X_i$?
+ 			\end{enumerate}
+ 			\item Demuestre por cálculo directo que para las variables aleatorias $\perp(X,Y)$, se tienen las siguientes implicaciones:
+ 			\begin{enumerate}
+ 				\item $X \sim \mathcal{P}_{\lambda}, Y \sim \mathcal{P}_{\lambda^{\prime}} \implies X+Y \sim \mathcal{P}_{\lambda+\lambda^\prime}.$
+ 				\item $X \sim \mathcal{B}_{n_1,p}, Y \sim \mathcal{B}_{n_2,p} \implies X+Y \sim \mathcal{B}_{n_1+n_2,p}.$
+ 					\item $X \sim N(m_1,\sigma_1^2), Y \sim N(m_2,\sigma_2^2)\implies$\\$ X+Y \sim N(m_1+m_2,\sigma_1^2+\sigma_2^2).$
+ 			\end{enumerate} 
+ 		\end{itemize}
+ 		\item[\textbf{Ejercicio 2.}]
+ 		$\;$\\
+ 		En un típico texto alemán, la letra e es la más frecuente con un $12.5$ \% de probabilidad, por encima de todas las demás letras. Un software reapasa un texto desconocido de una forma puramente aleatoria y reconoce con $99$\% de la letra e correctamente. Con la probabilidad de $0.1$\% reconoce una e erroneamente.
+ 		\begin{enumerate}
+ 			\item ¿Qué tan grande es la probabilidad de que el softaware indique la letra e en un paso?
+ 			\item ¿Qué tan grande es la probabilidad de que sea efectivamente la letra e cuando detecta una e?\\
+ 			\textit{Formalice estas probabilidades y cuide meticulosamente la notación.\\
+ 				Identifique todos los eventos que utiliza.\\
+ 				Calcule todo en fracciones y de el resultado como fracción simplificada de dos números enteros.}
+ 			
+ 		\end{enumerate}
+ 		
+ 		
+ 		\item[\textbf{Ejercicio 3.}]
+ 		$\;$\\
+ 		\textbf{Sin memoria implica distribución exponencial o geométrica.}
+ 		\begin{enumerate}
+ 			\item Demuestre que para toda variable aleatoria con valores $[0,\infty)$ cuya distribución $\mathbb{P}_X$ es absolutamente contínua con respecto a la medida de Lebesgu, con una densidad estrictamente positiva y que satisface:
+ 			$$\forall t,s>0, 0< \mathbb{P}(X>t+s\vert X>t)=\mathbb{P}(X>s)<1.$$
+ 			Se tiene que $\exists \lambda >0 \tq \mathbb{P}_X=\exp(\lambda)$.
+ 			\\ \textit{Ayuda: Calcule la ecuación que satisface $\log(1-F_X)$, resuelva la ecuación y deduzca el resultado.}
+ 			\item Demuestre que para toda variable aleatoria $X$ con valores en $\N$, cuya distribucion $\mathbb{P}_X$ satisface:
+ 			$$\mathbb{P}(X>n+m\vert X>m)=\mathbb{P}(X>n), \forall n,m \in \N\backslash{0}.$$
+ 			Se tiene que existe un parámetro $a \in (0,1]$ tal que $X \sim \mathcal{G}_a$.
+ 			\\
+ 			\textit{Ayuda: Calcule $\mathbb{P} (x = k)$ como diferencia de $1$ menos la función de distribución y use el inciso anterior. La demostración se hace entonces, por inducción}
+ 			
+ 			
+ 		\end{enumerate}
+ 		
+ 		\end{enumerate}
+ \end{document}
